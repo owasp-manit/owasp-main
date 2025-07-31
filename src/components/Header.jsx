@@ -50,10 +50,12 @@ useEffect(() => {
       <div className="container-custom navbar-container">
         <div className={`glass-card ${scrolled ? 'shadow-lg' : ''}`}>
           <nav className="flex items-center justify-between px-4 py-3">
+            <Link href={"/"} className="flex items-center">
             <div className="flex items-center">
               <div className="logo h-10 w-10 rounded-full mr-3"></div>
               <span className="text-white font-bold text-xl hidden sm:block">OWASP MANIT</span>
             </div>
+            </Link>
             
             {/* Desktop Navigation */}
             <ul className="hidden lg:flex items-center space-x-1">
@@ -76,7 +78,7 @@ useEffect(() => {
                 </div>
               </li>
               
-              <li><Link href="/mission" className={`nav-link ${pathname === '/mission' ? 'active' : ''}`}>Login</Link></li>
+              <li><Link href="/mission" className={`nav-link ${pathname === '/mission' ? 'active' : ''}`}>Contact Us</Link></li>
               
             </ul>
             
@@ -119,11 +121,6 @@ useEffect(() => {
                 </div>
               </li>
               
-              <li><Link href="/mission" className="block text-white py-2">Our Mission</Link></li>
-              <li><Link href="/team" className="block text-white py-2">Team</Link></li>
-              <li><Link href="/project" className="block text-white py-2">Projects</Link></li>
-              <li><Link href="/news" className="block text-white py-2">News</Link></li>
-              <li><Link href="/faqs" className="block text-white py-2">FAQs</Link></li>
             </ul>
           </nav>
         </div>

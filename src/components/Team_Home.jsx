@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { Vortex } from './ui/vortex.jsx';
 import Image from 'next/image';
 import hero from '../../public/hack.jpg';
+import ContactForm from './contactForm.jsx';
 const Team_Home = () => {
   const [text, setText] = useState('');
   return (
@@ -116,6 +117,7 @@ const Team_Home = () => {
           <h2 className="section-title text-white mb-12">Frequently Asked Questions</h2>
           <Faqs />
         </div>
+        <ContactForm/>
       </section>
     </div>
   );

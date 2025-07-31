@@ -1,14 +1,13 @@
 "use client";
-
 import { IconArrowLeft, IconArrowRight } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useEffect, useState, useRef } from "react";
+import EventData from "../../data/EventData.js";
+import Image from "next/image";
 
-export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
+export const AnimatedTestimonials = ({ testimonials = EventData, autoplay = false }) => {
   const [active, setActive] = useState(0);
 
-  // We’ll store one random rotation number per testimonial in state,
-  // but only fill it on the client (after mount). On the server, it stays [].
   const [rotations, setRotations] = useState([]);
   const isClient = useRef(false);
 
@@ -23,10 +22,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
   const isActive = (idx) => idx === active;
 
   useEffect(() => {
-    // Mark that we’re running on the client
     isClient.current = true;
-
-    // Generate one random rotation per testimonial
     const newRotations = testimonials.map(() => Math.floor(Math.random() * 21) - 10);
     setRotations(newRotations);
 
@@ -50,14 +46,12 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                     opacity: 0,
                     scale: 0.9,
                     z: -100,
-                    // On the server (first render), always rotate: 0
                     rotate: 0,
                   }}
                   animate={{
                     opacity: isActive(index) ? 1 : 0.7,
                     scale: isActive(index) ? 1 : 0.95,
                     z: isActive(index) ? 0 : -100,
-                    // After mount, if not active, pick the random rotation for this index
                     rotate: isClient.current
                       ? isActive(index)
                         ? 0
@@ -70,7 +64,6 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                     opacity: 0,
                     scale: 0.9,
                     z: 100,
-                    // On exit, also use the same random if on client
                     rotate: isClient.current ? rotations[index] : 0,
                   }}
                   transition={{
@@ -79,7 +72,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                   }}
                   className="absolute inset-0 origin-bottom"
                 >
-                  <img
+                  <Image
                     src={testimonial.image}
                     alt={testimonial.name}
                     width={500}
@@ -96,7 +89,7 @@ export const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
         {/* RIGHT: text content */}
         <div className="flex flex-col justify-between py-4 gap-4">
           <motion.div
-            key={active} // re-trigger animation when active changes
+            key={active}
             initial={{
               y: 20,
               opacity: 0,

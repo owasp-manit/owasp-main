@@ -25,29 +25,20 @@ function Section({ children }) {
 
 const Team = () => {
   const [showAll, setShowAll] = useState(false);
-  const containerRef = useRef(null);
-  // Sentinel at bottom of container
-  const [bottomInView, setBottomInView] = useState(false);
-  const bottomRef = useRef(null);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setBottomInView(entry.isIntersecting);
-      },
-      { threshold: 0.1 }
-    );
+  const teamSectionRef = useRef(null);
+  const isIntersecting = useInView(teamSectionRef);
 
-    if (bottomRef.current) {
-      observer.observe(bottomRef.current);
+  const handleToggle = () => {
+    if (showAll) {
+      teamSectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
-
-    return () => observer.disconnect();
-  }, []);
+    setShowAll(prev => !prev);
+  };
 
   const displayed = showAll ? TeamData : TeamData.slice(0, 4);
 
   return (
-    <div ref={containerRef} className="relative flex flex-col items-center py-3 bg-gray-800 rounded-2xl justify-around ">
+    <div ref={teamSectionRef} className="relative flex flex-col items-center py-3 bg-gray-800 rounded-2xl justify-around ">
       <h2 className="text-4xl font-extrabold text-center text-white mb-12 p-2">
         Meet Our Team
       </h2>
@@ -99,24 +90,26 @@ const Team = () => {
         ))}
       </div>
 
-      {/* Sentinel element */}
-      <div ref={bottomRef} className="w-full h-1 mt-4" />
+      {/* Toggle button for mobile */}
+      <div className="sm:hidden h-16"> {/* Spacer for sticky button */}
+        {isIntersecting && (
+            <div className="sticky bottom-4 text-center">
+                <button
+                    onClick={handleToggle}
+                    className="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition-colors duration-300"
+                >
+                    {showAll ? "Show Less" : "Show More"}
+                </button>
+            </div>
+        )}
+      </div>
 
-     {/* Floating toggle btn on mobile, hidden if scrolled past bottom */}
-     {showAll && !bottomInView && (
-        <button
-          onClick={() => setShowAll(true)}
-          className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full px-6 py-3 transition-colors duration-300 block"
-        >
-          Show More
-        </button>
-      )}
-      {/* Desktop toggle button */}
+      {/* Toggle button for desktop */}
       <button
-        onClick={() => setShowAll(prev => !prev)}
+        onClick={handleToggle}
         className="mt-8 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-full transition-colors duration-300 hidden sm:block"
       >
-        {showAll ? "Show Less" : "Show All"}
+        {showAll ? "Show Less" : "Show More"}
       </button>
     </div>
   );
