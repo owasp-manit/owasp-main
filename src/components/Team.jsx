@@ -39,75 +39,70 @@ const Team = () => {
         Meet Our Team
       </h2>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
-        {displayed.map((member, idx) => (
-          <Section key={idx}>
-            <div className="bg-black bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 w-80 sm:w-60 h-80">
-              <div className="relative w-full h-40 group">
-                {/* --- MODIFICATION 1: Added blur on hover to the Image --- */}
-                <Image
-                  src={member.dp}
-                  alt={member.name}
-                  fill
-                  className="object-cover rounded-t-2xl transition-all duration-300 group-hover:blur-sm"
-                  sizes="(max-width: 768px) 100vw, 300px"
-                />
-                
-                {/* --- MODIFICATION 2: Reduced overlay opacity for better visibility --- */}
-                <div
-                  className="absolute inset-0 bg-transparent bg-opacity-20
-                             hidden sm:flex items-center justify-center gap-4 
-                             opacity-0 group-hover:opacity-100 
-                             transition-opacity duration-300"
-                >
-                  <a
-                    href={member.insta}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white rounded-full hover:bg-pink-100 transition-colors"
-                  >
-                    <BsInstagram className="text-xl text-pink-600" />
-                  </a>
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white rounded-full hover:bg-sky-100 transition-colors"
-                  >
-                    <FaLinkedinIn className="text-xl text-sky-600" />
-                  </a>
-                </div>
-              </div>
-
-              <div className="p-4 text-center">
-                <h3 className="text-xl font-semibold text-white">
-                  {member.name}
-                </h3>
-                <p className="mt-1 text-sm text-gray-300">{member.role}</p>
-
-                <div className="mt-4 flex justify-center gap-4 sm:hidden">
-                  <a
-                    href={member.insta}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white/10 rounded-full"
-                  >
-                    <BsInstagram className="text-xl text-pink-500" />
-                  </a>
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-white/10 rounded-full"
-                  >
-                    <FaLinkedinIn className="text-xl text-sky-500" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          </Section>
-        ))}
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
+  {displayed.map((member, idx) => (
+    // The card div is now the direct child of the grid.
+    // The <Section> wrapper has been removed.
+    <div key={idx} className="bg-black bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 w-full h-80">
+      
+      {/* This parent div MUST have position: relative and a defined height (h-40) */}
+      <div className="relative w-full h-40 group">
+        <Image
+          src={member.dp}
+          alt={member.name}
+          fill
+          className="object-cover rounded-t-2xl transition-all duration-300 group-hover:blur-sm"
+          sizes="(max-width: 768px) 100vw, 300px"
+        />
+        
+        <div className="absolute inset-0 bg-transparent bg-opacity-20 hidden sm:flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <a
+            href={member.insta}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-white rounded-full hover:bg-pink-100 transition-colors"
+          >
+            <BsInstagram className="text-xl text-pink-600" />
+          </a>
+          <a
+            href={member.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-white rounded-full hover:bg-sky-100 transition-colors"
+          >
+            <FaLinkedinIn className="text-xl text-sky-600" />
+          </a>
+        </div>
       </div>
+
+      <div className="p-4 text-center">
+        <h3 className="text-xl font-semibold text-white">
+          {member.name}
+        </h3>
+        <p className="mt-1 text-sm text-gray-300">{member.role}</p>
+
+        <div className="mt-4 flex justify-center gap-4 sm:hidden">
+          <a
+            href={member.insta}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-white/10 rounded-full"
+          >
+            <BsInstagram className="text-xl text-pink-500" />
+          </a>
+          <a
+            href={member.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-white/10 rounded-full"
+          >
+            <FaLinkedinIn className="text-xl text-sky-500" />
+          </a>
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
 
       <button
         onClick={handleToggle}
