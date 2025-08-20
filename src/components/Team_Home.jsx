@@ -22,6 +22,12 @@ const Team_Home = () => {
   // ADDITION 2: Add state to manage the loading status
   const [loading, setLoading] = useState(true);
 
+  const goToNews = () => {
+  window.scrollTo({
+    top: document.getElementById('news').offsetTop,
+    behavior: 'smooth',
+  });
+};
   useEffect(() => {
     // This timer will set loading to false after 2 seconds
     const timer = setTimeout(() => {
@@ -72,6 +78,10 @@ const Team_Home = () => {
       <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-8">
         Chapter MANIT
       </p>
+      <button
+        onClick={goToNews}
+        className="px-15 py-3 bg-gradient-to-r cursor-pointer bg-white/10 backdrop-blur-lg border border-white/20 hover:bg-white/20 hover:border-white/30 text-white font-medium rounded-2xl"
+      >Explore</button>
     </div>
   </div>
         <section

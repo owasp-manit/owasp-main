@@ -9,6 +9,7 @@ import EventData from "../../data/EventData";
 import Link from "next/link";
 import Image from "next/image";
 import Header from "@/components/Header.jsx";
+import Footer from "@/components/Footer.jsx";
 
 const UpcomingEv = ({ hideTitle = false }) => {
   return (
@@ -199,6 +200,7 @@ const UpcomingEv = ({ hideTitle = false }) => {
           </a>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

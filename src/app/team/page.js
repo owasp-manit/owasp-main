@@ -4,6 +4,7 @@ import Header from "@/components/Header.jsx";
 import Image from "next/image";
 import Link from "next/link";
 import Team from "@/components/Team.jsx";
+import Footer from "@/components/Footer.jsx";
 
 const CTFInfo = () => {
   const images = [
@@ -18,6 +19,7 @@ const CTFInfo = () => {
       <div className="h-30"></div>
 
       <Team />
+      <Footer />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Footer from "@/components/Footer.jsx";
 
 const ContactForm = () => {
   const form = useRef();
@@ -69,6 +70,7 @@ const ContactForm = () => {
           <p className="text-green-400 mt-3">✅ Your message has been sent!</p>
         )}
       </form>
+      <Footer />
     </div>
   );
 };

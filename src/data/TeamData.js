@@ -1,19 +1,5 @@
 const TeamData = [
   {
-    name: "Gautam Pratap",
-    role: "Founder",
-    dp: require("../assets/gautam.jpg"),
-    insta: "https://www.instagram.com/_gautampratap/",
-    linkedin: "https://www.linkedin.com/in/gautampratap/",
-  },
-  {
-    name: "Arpit Goyal",
-    role: "Co-Founder",
-    dp: require("../assets/arpit.png"),
-    insta: "https://www.instagram.com/_gautampratap/",
-    linkedin: "https://www.linkedin.com/in/gautampratap/",
-  },
-  {
     name: "Ranjeet Singh",
     role: "Mentor",
     dp: "https://media.licdn.com/dms/image/v2/D4D03AQGytkbZ1e5H4A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1702531904953?e=1753920000&v=beta&t=ptn_c6Ryg-QJ6iyIdMOVxFcHF9wnbHO08RBercf59Qg",

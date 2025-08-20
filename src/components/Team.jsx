@@ -39,7 +39,7 @@ const Team = () => {
         Meet Our Team
       </h2>
 
-      <div className="flex flex-wrap gap-7 justify-center">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7">
         {displayed.map((member, idx) => (
           <Section key={idx}>
             <div className="bg-black bg-opacity-10 backdrop-blur-lg rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 w-80 sm:w-60 h-80">

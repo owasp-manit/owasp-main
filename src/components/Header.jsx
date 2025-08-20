@@ -46,8 +46,9 @@ useEffect(() => {
   }, [pathname]);
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
-      <div className="container-custom navbar-container">
+    <div className='flex justify-center items-center'>
+    <header className={`navbar-container fixed top-0 w-300 z-50 transition-all duration-300 ${scrolled ? 'py-2' : 'py-4'}`}>
+      
         <div className={`glass-card ${scrolled ? 'shadow-lg' : ''}`}>
           <nav className="flex items-center justify-between px-4 py-3">
             <Link href={"/"} className="flex items-center">
@@ -128,8 +129,9 @@ useEffect(() => {
             </ul>
           </nav>
         </div>
-      </div>
+      
     </header>
+    </div>
   );
 };
 

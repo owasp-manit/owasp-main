@@ -3,10 +3,19 @@ import React from "react";
 import Header from "@/components/Header.jsx";
 import Image from "next/image";
 import Link from "next/link";
-
+import Footer from "@/components/Footer.jsx";
 
 const CyberBasicsInfo = () => {
-    const images = ["/images/cyberbasics/1.JPG", "/images/cyberbasics/2.JPG", "/images/cyberbasics/3.JPG", "/images/cyberbasics/4.JPG", "/images/cyberbasics/6.JPG","/images/cyberbasics/7.JPG","/images/cyberbasics/8.png","/images/cyberbasics/9.JPG"];
+  const images = [
+    "/images/cyberbasics/1.JPG",
+    "/images/cyberbasics/2.JPG",
+    "/images/cyberbasics/3.JPG",
+    "/images/cyberbasics/4.JPG",
+    "/images/cyberbasics/6.JPG",
+    "/images/cyberbasics/7.JPG",
+    "/images/cyberbasics/8.png",
+    "/images/cyberbasics/9.JPG",
+  ];
   return (
     <div className="min-h-screen w-full bg-gradient-to-br from-slate-900 via-black to-slate-800 text-white px-4">
       <Header />
@@ -20,9 +29,9 @@ const CyberBasicsInfo = () => {
           OWASP MANIT hosted <strong>CyberBasics 1.0</strong>, an insightful
           guest lecture led by <strong>Hemraj Singh Chuhan</strong>, an
           experienced cyber security professional and consultant. The session
-          covered the foundations of cybersecurity, real-world case studies,
-          and essential awareness practices for budding ethical hackers and
-          security enthusiasts.
+          covered the foundations of cybersecurity, real-world case studies, and
+          essential awareness practices for budding ethical hackers and security
+          enthusiasts.
         </p>
 
         <div className="relative w-full h-64 md:h-[450px] rounded-2xl overflow-hidden shadow-2xl mb-10">
@@ -95,6 +104,7 @@ const CyberBasicsInfo = () => {
           </Link>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
