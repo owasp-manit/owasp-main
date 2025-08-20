@@ -1,12 +1,5 @@
 const TeamData = [
   {
-    name: "Ranjeet Singh",
-    role: "Mentor",
-    dp: "https://media.licdn.com/dms/image/v2/D4D03AQGytkbZ1e5H4A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1702531904953?e=1758758400&v=beta&t=9tWiVYx6oJYmqTnWT3Ew0Phh6AVxfmEsmXJq49Ujxhs",
-    insta: "https://www.instagram.com/_gautampratap/",
-    linkedin: "https://www.linkedin.com/in/ranjeet-singh-990a17259/",
-  },
-  {
     name: "Pulkit Gangil",
     role: "Co-ordinator",
     dp: "https://media.licdn.com/dms/image/v2/D4D03AQF4v2f1GZiSsA/profile-displayphoto-shrink_400_400/B4DZdo.nmaGgAk-/0/1749812936654?e=1758758400&v=beta&t=4RzbjbxtQ3xsgm987c1kCVvZmQ0ryndCQoKOkckxleY",

@@ -76,10 +76,10 @@ const Team = () => {
       </div>
 
       <div className="p-4 text-center">
-        <h3 className="text-xl font-semibold text-white">
+        <h3 className="text-s text-white">
           {member.name}
         </h3>
-        <p className="mt-1 text-sm text-gray-300">{member.role}</p>
+        <p className="mt-1 text-xs text-gray-300">{member.role}</p>
 
         <div className="mt-4 flex justify-center gap-4 sm:hidden">
           <a
