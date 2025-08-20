@@ -140,7 +140,7 @@ const TeamData = [
     linkedin: "https://www.linkedin.com/in/gautampratap/",
   },
   {
-    name: "Sanjita Boora",
+    name: "Sanjita",
     role: "Member",
     dp: "https://media.licdn.com/dms/image/v2/D4E03AQEyy2UPARxZgQ/profile-displayphoto-shrink_400_400/B4EZOgI4l7HwAk-/0/1733558505623?e=1756944000&v=beta&t=Q6JG_jyMKZ0HbaCm-4FWl_tqo0jgl6b75rFlIX6V0NU",
     insta: "https://www.instagram.com/_gautampratap/",

@@ -1,14 +1,25 @@
 "use client";
 import React from "react";
-import Layout from "../../components/Layout.jsx";
-import Team from "../../components/Team.jsx";
-import "../../components/responsive.css";
-import "../../App.css";
+import Header from "@/components/Header.jsx";
+import Image from "next/image";
+import Link from "next/link";
+import Team from "@/components/Team.jsx";
 
-export default function TeamPage() {
+const CTFInfo = () => {
+  const images = [
+    "/images/ctf/ctf.jpg",
+    "/images/ctf/ctf2.jpg",
+    "/images/ctf/ctf3.jpg",
+    "/images/ctf/ctf4.jpg",
+  ];
   return (
-    <Layout>
+    <div className="min-h-screen w-full bg-gradient-to-br from-slate-900 via-black to-slate-800 text-white px-4">
+      <Header />
+      <div className="h-30"></div>
+
       <Team />
-    </Layout>
+    </div>
   );
-}
+};
+
+export default CTFInfo;

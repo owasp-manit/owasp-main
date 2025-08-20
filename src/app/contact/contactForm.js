@@ -13,10 +13,10 @@ const ContactForm = () => {
 
     emailjs
       .sendForm(
-        "your_service_id",     // 🔁 Replace with yours
-        "your_template_id",    // 🔁 Replace with yours
+        "your_service_id", // 🔁 Replace with yours
+        "your_template_id", // 🔁 Replace with yours
         form.current,
-        "your_public_key"      // 🔁 Replace with yours
+        "your_public_key" // 🔁 Replace with yours
       )
       .then(
         () => {
@@ -32,7 +32,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-zinc-900 p-5 rounded-xl shadow-md text-white">
+    <div className="max-w-xl mx-auto bg-zinc-900 p-8 rounded-xl shadow-md text-white">
       <h2 className="text-2xl font-semibold mb-6 text-sky-400">Contact Us</h2>
       <form ref={form} onSubmit={sendEmail} className="space-y-4">
         <input

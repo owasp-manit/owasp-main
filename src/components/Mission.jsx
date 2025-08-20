@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 const Mission = () => {
   return (
     <div className="w-full ">
-      <div className="container-custom gap-10 ">
+      
         <div 
         
-          className="glass-card p-8 md:p-12 rounded-2xl"
+          className="glass-card p-5 md:p-5 rounded-2xl w-full"
         >
           
           {/* Vision Card */}
@@ -86,7 +86,7 @@ const Mission = () => {
            
           </div>
         </div>
-      </div>
+      
     </div>
   );
 };

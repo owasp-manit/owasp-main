@@ -68,16 +68,16 @@ setNewsData(articles);
     <div
       className={
         pathname === "/"
-          ? "news-container w-full h-auto flex justify-center py-12"
-          : "news-container w-full min-h-screen flex justify-center py-12"
+          ? "news-container w-full h-auto flex justify-center py-5"
+          : "news-container w-full min-h-screen flex justify-center py-5"
       }
       style={{ background: 'transparent' }}
     >
       <div
         className={
           pathname === "/"
-            ? "w-[95%] max-w-6xl p-8 border-none bg-transparent"
-            : "w-[95%] max-w-6xl p-8 border-none bg-transparent overflow-y-auto custom-scrollbar"
+            ? "w-[100%] max-w-8xl p-2 border-none bg-transparent"
+            : "w-[100%] max-w-8xl p-2 border-none bg-transparent overflow-y-auto custom-scrollbar"
         }
       >
         {loading ? (

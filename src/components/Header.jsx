@@ -60,8 +60,9 @@ useEffect(() => {
             {/* Desktop Navigation */}
             <ul className="hidden lg:flex items-center space-x-1">
           
-              
+              <li><Link href="/" className={`nav-link ${pathname === '/mission' ? 'active' : ''}`}>Home</Link></li>
               <li className="relative">
+                
                 <button 
                   className={`nav-link flex items-center ${pathname.includes('/events') || pathname.includes('/upcoming') ? 'active' : ''}`}
                   onClick={() => setEvents(!events)}
@@ -78,7 +79,8 @@ useEffect(() => {
                 </div>
               </li>
               
-              <li><Link href="/mission" className={`nav-link ${pathname === '/mission' ? 'active' : ''}`}>Contact Us</Link></li>
+              <li><Link href="/contact" className={`nav-link ${pathname === '/mission' ? 'active' : ''}`}>Contact Us</Link></li>
+              <li><Link href="/team" className={`nav-link ${pathname === '/mission' ? 'active' : ''}`}>Team</Link></li>
               
             </ul>
             
@@ -105,6 +107,7 @@ useEffect(() => {
           <nav className="py-4 px-6">
             <ul className="space-y-4">
               <li><Link href="/" className="block text-white py-2">Home</Link></li>
+              <li><Link href="/team" className="block text-white py-2">Team</Link></li>
               
               <li>
                 <button 
@@ -118,6 +121,7 @@ useEffect(() => {
                 <div className={`overflow-hidden transition-all duration-300 pl-4 ${events ? 'max-h-20 mt-2' : 'max-h-0'}`}>
                   <Link href="/events" className="block text-white py-2">Past Events</Link>
                   <Link href="/upcoming" className="block text-white py-2">Upcoming Events</Link>
+                  
                 </div>
               </li>
               
