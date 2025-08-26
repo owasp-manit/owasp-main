@@ -76,7 +76,7 @@ setNewsData(articles);
       <div
         className={
           pathname === "/"
-            ? "w-[100%] max-w-8xl p-2 border-none bg-transparent"
+            ? "w-[100%] max-w-8xl p-2 border-none bg-transparent "
             : "w-[100%] max-w-8xl p-2 border-none bg-transparent overflow-y-auto custom-scrollbar"
         }
       >
@@ -97,7 +97,7 @@ setNewsData(articles);
           </div>
         ) : (
           newsData && newsData.map((item, index) => (
-            <Section key={index}>
+            <div key={index} >
               <div className="news mb-16">
                 <div className="relative">
                   {/* Unified layout for both desktop and mobile - using mobile design */}
@@ -146,7 +146,7 @@ setNewsData(articles);
                   </div>
                 </div>
               </div>
-            </Section>
+            </div>
           ))
         )}
         
