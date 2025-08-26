@@ -121,7 +121,7 @@ const TeamData = [
   {
     name: "Pranjali Tiwari",
     role: "Promotion team",
-    dp: require("../../public/images/team/pa.jpg"),
+    dp: require("../../public/images/team/pt.jpg"),
     insta: "https://www.instagram.com/_gautampratap/",
     linkedin: "https://www.linkedin.com/in/gautampratap/",
     year: 2,
