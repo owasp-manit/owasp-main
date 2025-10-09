@@ -2,7 +2,7 @@ const TeamData = [
   {
     name: "Pulkit Gangil",
     role: "Co-ordinator",
-    dp: "https://media.licdn.com/dms/image/v2/D4D03AQF4v2f1GZiSsA/profile-displayphoto-shrink_400_400/B4DZdo.nmaGgAk-/0/1749812936654?e=1758758400&v=beta&t=4RzbjbxtQ3xsgm987c1kCVvZmQ0ryndCQoKOkckxleY",
+    dp: "https://media.licdn.com/dms/image/v2/D4D03AQF4v2f1GZiSsA/profile-displayphoto-shrink_100_100/B4DZdo.nmaGgAY-/0/1749812936605?e=1762992000&v=beta&t=Su0zLIVi0-noR6FCR3P1nfG3YScsc0pX7FTAjhjNgFQ",
     insta: "https://www.instagram.com/_gautampratap/",
     linkedin: "https://www.linkedin.com/in/pulkit1504/",
     year: 3,
@@ -10,7 +10,7 @@ const TeamData = [
   {
     name: "Pradeep Singh Yadav",
     role: "Co-coordinator",
-    dp: "https://media.licdn.com/dms/image/v2/D4D03AQHDMHCYgOyIHg/profile-displayphoto-scale_400_400/B4DZjhUlgrG8Ag-/0/1756126929039?e=1759363200&v=beta&t=VgNeOtEnu4X_7dC4qdi9Iba47l7RX7xMX7giQsvhoL0",
+    dp: "https://media.licdn.com/dms/image/v2/D4D03AQHDMHCYgOyIHg/profile-displayphoto-scale_400_400/B4DZjhUlgrG8Ag-/0/1756126929039?e=1762992000&v=beta&t=TLlWhpMrPWbr-lBZNlE50x5Ttm3ukvrR5sg1cXvpcOk",
     insta: "https://www.instagram.com/_gautampratap/",
     linkedin: "https://www.linkedin.com/in/pradeepsinghyadav/",
     year: 3,
@@ -18,7 +18,7 @@ const TeamData = [
   {
     name: "Abizer Mhowwala",
     role: "Financial Lead",
-    dp: "https://media.licdn.com/dms/image/v2/D4E03AQHaNx1UekW0Dw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725604174637?e=1758758400&v=beta&t=Ai59ZIEEHDse73bu6QeSPxGzU8gwvh2ZMJwSFk-QTQI",
+    dp: "https://media.licdn.com/dms/image/v2/D4E03AQHaNx1UekW0Dw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1725604174637?e=1762992000&v=beta&t=HX5XOy59gie7xX5pMw8Q6lJYlPZN2ca0OOBPNqKnDCg",
     insta: "https://www.instagram.com/_gautampratap/",
     linkedin: "https://www.linkedin.com/in/abizer-mhowwala-9668492aa/",
     year: 3,
@@ -49,7 +49,7 @@ const TeamData = [
   {
     name: "Ashish Mishra",
     role: "Operations Coordinator",
-    dp: "https://media.licdn.com/dms/image/v2/D4E35AQF72m445At6Vg/profile-framedphoto-shrink_400_400/B4EZerkJQCGwAc-/0/1750930070061?e=1756832400&v=beta&t=5lh9S86ejMURCSW1x_Mriu7JdteEbQCWmJ0C6eeAZlc",
+    dp: "https://media.licdn.com/dms/image/v2/D4E35AQF72m445At6Vg/profile-framedphoto-shrink_400_400/B4EZerkJQCGwAc-/0/1750930070061?e=1760641200&v=beta&t=MX0lJfO01eeOxQ05nqOVa2tRKqRG6jZt3QoYzQKmtXA",
     insta: "https://www.instagram.com/_gautampratap/",
     linkedin: "https://www.linkedin.com/in/ashish-mishra-54419231a/",
     year: 2,
@@ -57,7 +57,7 @@ const TeamData = [
   {
     name: "Aditya Barnwal",
     role: "Assistant Finance Head",
-    dp: "https://media.licdn.com/dms/image/v2/D4D03AQF3TYj5KSbOpg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709453557423?e=1756944000&v=beta&t=KqedeTL9WruSsIeIqv812hlVpd20eKvZ-mgKomMhIjg",
+    dp: "https://media.licdn.com/dms/image/v2/D4D03AQF3TYj5KSbOpg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1709453557423?e=1762992000&v=beta&t=_-0yqqR302upVrkyfpxYnaS5ZL0xmgmMPHNNagyyb0s",
     insta: "https://www.instagram.com/_gautampratap/",
     linkedin: "https://www.linkedin.com/in/gautampratap/",
     year: 2,
@@ -65,7 +65,7 @@ const TeamData = [
   {
     name: "Tanishq Aggarwal",
     role: "Assistant Technical Head",
-    dp: "https://media.licdn.com/dms/image/v2/D4E03AQG04DMNkDzrqQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722853851412?e=1756944000&v=beta&t=buUKDJb0aR1NEq1xA56A0xap3u5-sRCr6BS9TvUgLSs",
+    dp: "https://media.licdn.com/dms/image/v2/D4E03AQG04DMNkDzrqQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1722853851412?e=1762992000&v=beta&t=G3MuQ8n-sQMTpTtnHa-JFbeAd9eCE_7JlRsrO5zvMgM",
     insta: "https://www.instagram.com/_gautampratap/",
     linkedin: "https://www.linkedin.com/in/gautampratap/",
     year: 2,
