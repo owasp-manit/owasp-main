@@ -18,41 +18,22 @@ function Section({ children }) {
   );
 }
 
-var requestOptions = {
-  method: "GET",
-};
 
-var query_params = {
-  q: "Cyber security",
-  lang: "en",
-  apikey: "7160bc21b220b31a001bb73e042258f5",
-};
-
-var esc = encodeURIComponent;
-var query = Object.keys(query_params)
-  .map(function (k) {
-    return esc(k) + "=" + esc(query_params[k]);
-  })
-  .join("&");
 
 const News = () => {
   const [newsData, setNewsData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!query) return;
     const handleFetchNewsData = async () => {
       try {
         setLoading(true);
-        const response = await fetch(
-          "https://gnews.io/api/v4/search?" + query,
-          requestOptions
-        );
+        const response = await fetch('/api/gnews');
         const data = await response.json();
         const articles = Array.isArray(data.articles)
-  ? data.articles?.map(({ title, description, source, url, content, publishedAt, image }) => ({ title, description, source, url, content, publishedAt, image }))
-  : [];
-setNewsData(articles);
+          ? data.articles?.map(({ title, description, source, url, content, publishedAt, image }) => ({ title, description, source, url, content, publishedAt, image }))
+          : [];
+        setNewsData(articles);
       } catch (error) {
         console.error("Error fetching news:", error);
       } finally {
@@ -60,7 +41,7 @@ setNewsData(articles);
       }
     };
     handleFetchNewsData();
-  }, [query]);
+  }, []);
 
   const pathname = usePathname();
   
