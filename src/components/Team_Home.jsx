@@ -72,11 +72,14 @@ const Team_Home = () => {
 
     {/* This div centers the hero text vertically and horizontally */}
     <div className="relative z-10 flex flex-col items-center justify-center h-full text-center">
+      <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white">
+        Cybersecurity
+      </p>
       <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold text-white mb-2">
         OWASP
       </h1>
       <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-8">
-        Chapter MANIT
+        Consortium
       </p>
       <button
         onClick={goToNews}

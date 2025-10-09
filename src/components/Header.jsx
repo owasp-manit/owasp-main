@@ -54,7 +54,7 @@ useEffect(() => {
             <Link href={"/"} className="flex items-center">
             <div className="flex items-center">
               <div className="logo h-10 w-10 rounded-full mr-3"></div>
-              <span className="text-white font-bold text-xl hidden sm:block">OWASP MANIT</span>
+              <span className="text-white font-bold text-xl hidden sm:block">Cybersecurity OWASP Consortium</span>
             </div>
             </Link>
             

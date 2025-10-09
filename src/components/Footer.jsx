@@ -113,19 +113,7 @@ const Footer = () => {
                 <FaMeetup className="text-lg" />
               </a>
             </div>
-            <div className="text-sm">
-              <p className="mb-3 text-center md:text-left">Join our community:</p>
-              <div className="flex space-x-4 justify-center md:justify-start">
-                <a href="#" className="flex items-center space-x-2 bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-lg text-sm transition-colors duration-300 shadow-md">
-                  <FaDiscord className="text-lg" />
-                  <span>Discord</span>
-                </a>
-                <a href="#" className="flex items-center space-x-2 bg-gray-700 hover:bg-gray-800 px-4 py-2 rounded-lg text-sm transition-colors duration-300 shadow-md">
-                  <FaGithub className="text-lg" />
-                  <span>GitHub</span>
-                </a>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
