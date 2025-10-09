@@ -2,7 +2,7 @@ const TeamData = [
   {
     name: "Pulkit Gangil",
     role: "Co-ordinator",
-    dp: "https://media.licdn.com/dms/image/v2/D4D03AQF4v2f1GZiSsA/profile-displayphoto-shrink_100_100/B4DZdo.nmaGgAY-/0/1749812936605?e=1762992000&v=beta&t=Su0zLIVi0-noR6FCR3P1nfG3YScsc0pX7FTAjhjNgFQ",
+    dp: "https://media.licdn.com/dms/image/v2/D4D03AQF4v2f1GZiSsA/profile-displayphoto-shrink_400_400/B4DZdo.nmaGgAk-/0/1749812936654?e=1762992000&v=beta&t=jOJ7pvwaFJXvg6mUzXFjggYTkN2GDbMrAXKHiXTC5_Y",
     insta: "https://www.instagram.com/_gautampratap/",
     linkedin: "https://www.linkedin.com/in/pulkit1504/",
     year: 3,
