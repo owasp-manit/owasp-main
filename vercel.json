@@ -1,5 +1,8 @@
 {
-  "version": 2,
-  "builds": [{ "src": "package.json", "use": "@vercel/static-build" }],
-  "outputDirectory": "dist"
+  "builds": [
+    {
+      "src": "next.config.mjs",
+      "use": "@vercel/next"
+    }
+  ]
 }
