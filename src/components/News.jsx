@@ -25,7 +25,7 @@ var requestOptions = {
 var query_params = {
   q: "Cyber security",
   lang: "en",
-  apikey: "3b4daf8d9ff0e2df9c8ce52ab2211357",
+  apikey: "7160bc21b220b31a001bb73e042258f5",
 };
 
 var esc = encodeURIComponent;
